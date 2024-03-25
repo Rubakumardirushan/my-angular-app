@@ -31,6 +31,8 @@
           },
           "configurations": {
             "production": {
+              "outputPath": "docs/my-angular-app",
+              "deployUrl": "/my-angular-app/",
               "budgets": [
                 {
                   "type": "initial",
@@ -88,6 +90,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
